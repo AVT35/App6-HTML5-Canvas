@@ -83,25 +83,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Let's Draw a Picture!"
-	<a href="#one"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-		for (var x = 0.5; x < 500; x += 10) {
-  			context.moveTo(x, 0);
-			context.lineTo(x, 375);
-		context.strokeStyle = "#eee";
-		context.stroke();
-		for (var y = 0.5; y < 375; y += 10) {
-  			context.moveTo(0, y);
-  			context.lineTo(500, y);
-		context.strokeStyle = "#eee";
-		context.stroke();
-		for (var x = 150.5; x < 500; x -= 10) {
-  			context.moveTo(x, 0);
-			context.lineTo(x, 375);
-		context.strokeStyle = "#eee";
-		context.stroke();
-		for (var y = 150.5; y < 375; y -= 10) {
-  			context.moveTo(0, y);
-  			context.lineTo(500, y);
+	<a href="#one"  onclick=drawline();" class="w3-btn w3-black"> Yes</a>
+		<a drawline() = drawLine(int 0, int 0, int 100, int 100) </a>
 		context.strokeStyle = "#eee";
 		context.stroke();
 }
