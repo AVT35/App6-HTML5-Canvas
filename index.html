@@ -66,26 +66,28 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>App6---HTML5-Canvas</h1>
+<div class="page" id="one">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Draw the Border</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+	<a href="#two"  class="w3-btn w3-black"> Draw a Border!</a>
+
+    	</div>
 </div>
-	
-<div id="content" class="w3-container">
-	<p>Content goes here.</p>
-		
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
-</footer>
+<div class="page" id="two">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Load an Image</h1>
+	</div>
 	
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>Let's Draw a Picture!"
-	<a href="#one"  onclick=drawline();" class="w3-btn w3-black"> Yes</a>
-		<a square.drawLine(int 0, int 0, int 100, int 100) </a>
-}
+	<div id="content" class="w3-container">
+	<canvas id="myCanvas" width="1000" height="500" style="border:1px solid #000000;">
+	</canvas>
+	<a href="#three"   class="w3-btn w3-black"> Load an Image!</a>
 
+	</div>
+</div>	
 </body>
 </html>
