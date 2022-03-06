@@ -43,6 +43,12 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 </script>
 
+function draw_b() {
+	var b_canvas = document.getElementById("b");
+	var b_context = b_canvas.getContext("2d");
+	b_context.fillRect(50, 25, 150, 100);
+}
+
 
 
 <style>	
@@ -66,28 +72,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </style>
 
 <body>
-<div class="page" id="one">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Draw the Border</h1>
-	</div>
-	
-    	<div id="content" class="w3-container">
-	<a href="#two"  class="w3-btn w3-black"> Draw a Border!</a>
-
-    	</div>
+</div>
+	<a onclick="draw_b();" class="w3-btn w3-black"> Draw the Border!</a>
 </div>
 
-<div class="page" id="two">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Load an Image</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<canvas id="myCanvas" width="1000" height="500" style="border:1px solid #000000;">
-	</canvas>
-	<a href="#three"   class="w3-btn w3-black"> Load an Image!</a>
-
-	</div>
-</div>	
 </body>
 </html>
