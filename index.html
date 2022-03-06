@@ -44,7 +44,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </script>
 
 function draw_b() {
-	var b_canvas = document.getElementById("b");
+	var b_canvas = document.getElementById("canvas");
 	var b_context = b_canvas.getContext("2d");
 	b_context.fillRect(50, 25, 150, 100);
 }
@@ -72,6 +72,12 @@ function draw_b() {
 </style>
 
 <body>
+	
+</div>
+
+<canvas id="canvas" width="1000" height="500" style="border:1px solid #000000;">
+</canvas>
+
 </div>
 	<a onclick="draw_b();" class="w3-btn w3-black"> Draw the Border!</a>
 </div>
