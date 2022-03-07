@@ -50,13 +50,12 @@ function draw_b(){
 	a_context.fillRect(50, 25, 75, 50);
 }
 
-function write_name(){
+function draw_text(){
 	var b_canvas = document.getElementById("myCanvas");
-	var context = b_canvas.getContext("2d");
-	context.font = "35px Calibri";
-	context.fillText("Anagha", 150, 150);
+	var b_context = b_canvas.getContext("2d");
+	b_context.font = "35px Calibri";
+	b_context.fillText("Anagha", 150, 150);
 }
-
 </script>
 	
 <style>	
