@@ -56,6 +56,15 @@ function write_name(){
 	b_context.font = "35px Calibri";
 	b_context.fillText("Anagha", 150, 150);
 }
+
+function insert_pic(){
+	var b_canvas = document.getElementById("myCanvas");
+	var b_context = b_canvas.getContext("2d");
+	var image = document.getElementById("raccoon");
+	<image id="raccoon" src="https://www.treehugger.com/thmb/usgQQfE-U3tptXXb61Yf1J86jjU=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/raccoon-posing-1216787912-75269b35317a421693148f4ffcbeb339.jpg" width="75" height="75";
+	b_context.drawImage(racoon, 75, 75)
+}
+	
 </script>
 	
 <style>	
@@ -98,6 +107,8 @@ function write_name(){
 	<a onclick="draw_b();" class="w3-btn w3-black"> Draw the Border!</a>
 </div>
 	<a onclick="write_name();" class="w3-btn w3-black"> Write Name!</a>
+</div>
+	<a onclick="insert_pic();" class="w3-btn w3-black"> Insert Picture!</a>
 </div>
 
 </body>
