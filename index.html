@@ -44,7 +44,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 
-function draw_b(){
+function draw_rectangle(){
 	var a_canvas = document.getElementById("myCanvas");
 	var a_context = a_canvas.getContext("2d");
 	a_context.fillRect(50, 25, 75, 50);
@@ -95,10 +95,13 @@ function write_name(){
 </canvas>
 
 </div>
-	<a onclick="draw_b();" class="w3-btn w3-black"> Draw the Border!</a>
+	<a onclick="draw_rectangle();" class="w3-btn w3-black"> Draw the Border!</a>
 </div>
 	<a onclick="write_name();" class="w3-btn w3-black"> Write Name!</a>
 </div>
+	<a onclick="insert_pic();" class="w3-btn w3-black"> Insert Image!</a>
+</div>
+
 
 </body>
 </html>
