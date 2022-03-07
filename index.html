@@ -44,15 +44,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 
-function draw_b() {
-	var b_canvas = document.getElementById("myCanvas");
-	var b_context = b_canvas.getContext("2d");
-	b_context.fillRect(50, 25, 150, 100);
+function draw_b(){
+	var a_canvas = document.getElementById("myCanvas");
+	var a_context = a_canvas.getContext("2d");
+	a_context.fillRect(50, 25, 75, 50);
 }
 
-function write_name() {
-	var c_canvas = document.getElementById("myCanvas");
-	var context = c_canvas.getContext("2d");
+function write_name(){
+	var b_canvas = document.getElementById("myCanvas");
+	var context = b.getContext("2d");
 	context.font = "35px Calibri";
 	context.fillText("Anagha", 150, 150);
 }
@@ -73,13 +73,16 @@ function write_name() {
     z-index: 0;
     background-color: hsl(0,0%,100%);
 }
-  .page:target {
+.page:target {
     left: 0vw;
     z-index: 1;
 }
 </style>
 
 <body>
+
+<div id="header" class="w3-container w3-flat-carrot">
+<h1> App 6 Assignment </h1>
 	
 </div>
 	
@@ -89,7 +92,6 @@ function write_name() {
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> 
 
-
 <canvas id="myCanvas" width="500" height="250" style="border:1px solid #000000;">
 </canvas>
 
@@ -97,6 +99,7 @@ function write_name() {
 	<a onclick="draw_b();" class="w3-btn w3-black"> Draw the Border!</a>
 </div>
 	<a onclick="write_name();" class="w3-btn w3-black"> Write Name!</a>
+</div>
 
 </body>
 </html>
