@@ -46,24 +46,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 function draw_b() { 
   	var b_canvas = document.getElementById("myCanvas"); 
   	var b_context = b_canvas.getContext("2d");
-  	b_context.fillRect(100, 50, 300, 200); 
+  	b_context.fillRect(50, 25, 150, 100); 
 	}
 
-function write_name(){ 
+function draw_text(){ 
 	var c = document.getElementById("myCanvas"); 
 	var ctx = c.getContext("2d"); 
 	ctx.font = "35px Calibri"; 
-	ctx.fillText("Anagha", 100, 100); 
-	}
-
-function insert_image(){ 
-	var c = document.getElementById("myCanvas"); 
-	var ctx = c.getContext("2d"); 
-	var img = document.getElementById("raccoon");
-	<img id="raccoon" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1781F/production/_109478269_69779790_699812073826799_7209695530425591305_n.jpg" width="75" height="50">
-	
-	}
- 
+	ctx.fillText("Anagha", 150, 150); 
 	}
 
 </script>
@@ -106,9 +96,7 @@ function insert_image(){
 </div>
 	<a onclick="draw_b();" class="w3-btn w3-black"> Draw the Rectangle!</a> 
 </div>
-	<a onclick="write_name();" class="w3-btn w3-black"> Write Name!</a> 
-</div>
-	<a onclick="draw_image();" class="w3-btn w3-black"> Load the Image!</a>
+	<a onclick="draw_text();" class="w3-btn w3-black"> Write Name!</a> 
 </div>
 
 </body>
