@@ -38,9 +38,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+
+	var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+	alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 
 function draw_b() {
@@ -52,8 +53,9 @@ function draw_b() {
 function write_name() {
 	var c_canvas = document.getElementById("myCanvas");
 	var context = c_canvas.getContext("2d");
-	context.font = "35px sans-serif";
+	context.font = "35px Calibri";
 	context.fillText("Anagha", 150, 150);
+}
 
 </script>
 	
@@ -88,7 +90,7 @@ function write_name() {
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> 
 
 
-<canvas id="myCanvas" width="1000" height="500" style="border:1px solid #000000;">
+<canvas id="myCanvas" width="500" height="250" style="border:1px solid #000000;">
 </canvas>
 
 </div>
