@@ -40,9 +40,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-	var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-	alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 
 function draw_rectangle(){
@@ -56,6 +56,14 @@ function write_name(){
 	var b_context = b_canvas.getContext("2d");
 	b_context.font = "35px Calibri";
 	b_context.fillText("Anagha", 150, 150);
+}
+
+function add_image(){
+	var b_canvas = document.getElementById("myCanvas");
+	var b_context = b_canvas.getContext("2d");
+	var image = document.getElementById("raccoon");
+	<image id="raccoon" src="raccoon.jpg">
+	b_context.drawImage(image, 10,10,75,100)
 }
 	
 function clear_canvas(){
@@ -106,6 +114,8 @@ function clear_canvas(){
 	<a onclick="draw_rectangle();" class="w3-btn w3-black"> Draw the Border!</a>
 </div>
 	<a onclick="write_name();" class="w3-btn w3-black"> Write Name!</a>
+</div>
+	<a onclick="add_image();" class="w3-btn w3-black"> Add Image!</a>
 </div>
 	<a onclick="clear_canvas();" class="w3-btn w3-black"> Clear Canvas!</a>
 </div>
