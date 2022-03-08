@@ -62,13 +62,14 @@ function add_image(){
 	var b_canvas = document.getElementById("myCanvas");
 	var b_context = b_canvas.getContext("2d");
 	var image = document.getElementById("raccoon");
-	<image id="raccoon" src="raccoon.jpg";>
-	b_context.drawImage(image, 10,10,75,100);
+	<image id="raccoon" image.src="raccoon.jpg";>
+		image.onload = function(){
+			b_context.drawImage(image, 10,10,75,100);
+	}
 }
 	
 function clear_canvas(){
 	var a_canvas = document.getElementById("myCanvas");
-	var b_context = b_canvas.getContext("2d");
 	a_canvas.width = a_canvas.width;
 }
 	
