@@ -56,6 +56,13 @@ function write_name(){
 	b_context.font = "35px Calibri";
 	b_context.fillText("Anagha", 150, 150);
 }
+	
+function clear_canvas(){
+	var a_canvas = document.getElementById("myCanvas");
+	var b_context = b_canvas.getContext("2d");
+	a_canvas.width = a_canvas.width
+}
+	
 </script>
 	
 <style>	
@@ -98,6 +105,8 @@ function write_name(){
 	<a onclick="draw_rectangle();" class="w3-btn w3-black"> Draw the Border!</a>
 </div>
 	<a onclick="write_name();" class="w3-btn w3-black"> Write Name!</a>
+</div>
+	<a onclick="clear_canvas();" class="w3-btn w3-black"> Clear Canvas!</a>
 </div>
 
 
