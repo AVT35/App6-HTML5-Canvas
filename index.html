@@ -56,6 +56,16 @@ function write_name(){
 	b_context.font = "35px Calibri";
 	b_context.fillText("Anagha", 150, 150);
 }
+
+function add_image(){ 
+	var a_canvas = document.getElementById("myCanvas");
+	var a_context = a_canvas.getContext("2d");
+	var img = new Image();
+	img.src = "raccoon.jpg";
+	img.onload = function() {
+		a_context.drawImage(img, 5,5,75,55);//determines where the image will be placed on the canvas(x,y,width, height) 
+		};
+}
 	
 function clear_canvas(){
 	var a_canvas = document.getElementById("myCanvas");
@@ -106,6 +116,8 @@ function clear_canvas(){
 	<a onclick="write_name();" class="w3-btn w3-black"> Write Name!</a>
 </div>
 	<a onclick="clear_canvas();" class="w3-btn w3-black"> Clear Canvas!</a>
+</div>
+	<a onclick="add_image();" class="w3-btn w3-black"> Add Image!</a>
 </div>
 
 
