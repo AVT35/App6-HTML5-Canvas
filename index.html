@@ -56,13 +56,6 @@ function write_name(){
 	b_context.font = "35px Calibri";
 	b_context.fillText("Anagha", 150, 150);
 }
-
-function add_image(){
-	var a_canvas = document.getElementByID ("myCanvas");
-	var a_context = a_context.getcontext("2d")
-	var img = document.getElementByID ("raccoon.jpg");
-	ctx.drawImage(img,5,5,55,75);
-}
 	
 function clear_canvas(){
 	var a_canvas = document.getElementById("myCanvas");
@@ -111,8 +104,6 @@ function clear_canvas(){
 	<a onclick="draw_rectangle();" class="w3-btn w3-black"> Draw the Border!</a>
 </div>
 	<a onclick="write_name();" class="w3-btn w3-black"> Write Name!</a>
-</div>
-	<a onclick="add_image();" class="w3-btn w3-black"> Add Image!</a>
 </div>
 	<a onclick="clear_canvas();" class="w3-btn w3-black"> Clear Canvas!</a>
 </div>
