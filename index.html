@@ -60,8 +60,11 @@ function write_name(){
 function add_image(){
 	var a_canvas = document.getElementByID ("myCanvas");
 	var a_context = a_context.getcontext("2d")
-	var img = document.getElementByID ("raccoon.jpg");
-	ctx.drawImage(img,5,5,55,75);
+	var image = new Image();
+	image.src = "raccoon.jpg";
+	image.onload = function draw_image(){
+		a_context.drawImage(image,0,0, 55, 75);
+		};
 }
 	
 function clear_canvas(){
