@@ -59,12 +59,9 @@ function write_name(){
 
 function add_image(){
 	var a_canvas = document.getElementByID ("myCanvas");
-	var a_context = a_context.getcontext("2d")
-	var image = new Image();
-	image.src = "https://ichef.bbci.co.uk/news/976/cpsprodpb/1781F/production/_109478269_69779790_699812073826799_7209695530425591305_n.jpg";
-	image.onload = function(){
-		a_context.drawImage(image,0,0, 55, 75);
-	}
+	var a_context = a_context.getcontext("2d");
+	var img = document.getElementById("raccoon"); 
+	a_context.drawImage(img,5,5);
 }
 	
 function clear_canvas(){
@@ -115,6 +112,7 @@ function clear_canvas(){
 </div>
 	<a onclick="write_name();" class="w3-btn w3-black"> Write Name!</a>
 </div>
+	<img id="racoon" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1781F/production/_109478269_69779790_699812073826799_7209695530425591305_n.jpg"  width="500" height="300">
 	<a onclick="add_image();" class="w3-btn w3-black"> Add Image!</a>
 </div>
 	<a onclick="clear_canvas();" class="w3-btn w3-black"> Clear Canvas!</a>
