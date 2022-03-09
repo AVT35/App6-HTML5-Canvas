@@ -61,10 +61,10 @@ function add_image(){
 	var a_canvas = document.getElementByID ("myCanvas");
 	var a_context = a_context.getcontext("2d")
 	var image = new Image();
-	image.src = "raccoon.jpg";
-	image.onload = function draw_image(){
+	image.src = "https://ichef.bbci.co.uk/news/976/cpsprodpb/1781F/production/_109478269_69779790_699812073826799_7209695530425591305_n.jpg";
+	image.onload = function(){
 		a_context.drawImage(image,0,0, 55, 75);
-		};
+	}
 }
 	
 function clear_canvas(){
